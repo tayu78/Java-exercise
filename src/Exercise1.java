@@ -8,7 +8,6 @@ public class  Exercise1 {
         System.out.print("Input the radious: ");
         radious = input.nextInt();
         input.close();
-        System.out.println(radious);
         area = Math.PI * radious * radious;
         System.out.printf("The radious is: %.15f",area);
     }
