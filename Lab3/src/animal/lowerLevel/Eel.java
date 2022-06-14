@@ -6,6 +6,7 @@ public class Eel extends Fish {
     private String ability;
 
     public Eel() {
+        super();
         this.ability = "Release electronic charge";
     }
 
@@ -20,11 +21,14 @@ public class Eel extends Fish {
     public String getAbility() {
         return ability;
     }
-
+    
     @Override
     public void showInfo() {
-        System.out.println("This is Eel");
+        super.showInfo();
+        System.out.println("ability=" + ability);
     }
+
+    
 
     
 

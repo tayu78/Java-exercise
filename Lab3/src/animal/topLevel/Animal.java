@@ -39,9 +39,29 @@ public class Animal {
     }
 
     
+
+    
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public void setAnimalType(String animalType) {
+        this.animalType = animalType;
+    }
+
+    public void setBloodType(String bloodType) {
+        this.bloodType = bloodType;
+    }
+
     public void showInfo() {
-       System.out.println("This is Animal");
-   }
+            System.out.println("animalType=" + animalType + ", bloodType=" + bloodType + ", height=" + height + ", weight="
+            + weight);
+            
+        }
  
     
 

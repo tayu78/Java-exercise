@@ -12,9 +12,6 @@ public class Eagle extends Birds {
         super(height, weight, animalType, bloodType, with, ability);
     }
 
-    @Override
-    public void showInfo() {
-        System.out.println("This is Eagle");
-    }
+    
 }
 

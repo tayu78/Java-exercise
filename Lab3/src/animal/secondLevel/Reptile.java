@@ -12,6 +12,10 @@ public class Reptile extends Animal {
         this.skinType = "Dry Skin";
         this.bone = "Backbone";
         this.eggType = "Soft-shelled";
+        this.setAnimalType("Reptile");
+        this.setBloodType("B");
+        this.setHeight(100);
+        this.setWeight(150);
     }
 
     public Reptile(int height, int weight, String animalType, String bloodType, String skinType, String bone,
@@ -40,13 +44,8 @@ public class Reptile extends Animal {
 
     @Override
     public void showInfo() {
-        System.out.println("This is Reptile");
+        super.showInfo();
+        System.out.println("bone=" + bone + ", eggType=" + eggType + ", skinType=" + skinType);
     }
 
-    
-
-    
-
-
-    
 }

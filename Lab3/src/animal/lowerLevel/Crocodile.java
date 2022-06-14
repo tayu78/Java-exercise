@@ -14,12 +14,5 @@ public class Crocodile extends Reptile {
             String eggType) {
         super(height, weight, animalType, bloodType, skinType, bone, eggType);
     }
-    
-    @Override
-    public void showInfo() {
-        System.out.println("This is Crocodile");
-    }
-
-
 
 }
