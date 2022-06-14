@@ -1,0 +1,36 @@
+package animal.secondLevel;
+
+import animal.topLevel.Animal;
+
+public class Birds extends Animal {
+    private String with;
+    private String ability;
+
+    public Birds() {
+        super();
+        this.with = "feathers";
+        this.ability = "fly";
+    }
+
+    public Birds(int height, int weight, String animalType, String bloodType, String with, String ability) {
+        super(height, weight, animalType, bloodType);
+        this.with = with;
+        this.ability = ability;
+    }
+
+    public String getWith() {
+        return with;
+    }
+
+    public String getAbility() {
+        return ability;
+    }
+    
+    @Override
+    public void showInfo() {
+        System.out.println("This is Birds");
+    }
+
+
+    
+}
