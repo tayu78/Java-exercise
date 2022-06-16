@@ -3,7 +3,7 @@
     https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
 
     staticがついたmehodはインスタンスを生成しなくても呼び出せる。
-    
+    staticクラスのsetterを外部から呼び出すとclass自体が変わる？（設計図自体が変わるイメージ？次にインスタンスかを行うと、そのインスタンスは既に変わったものを参照するのか->まだ試せていない）
 
 ## place folder
     %C,%S...: input が小文字でも大文字がreturn
