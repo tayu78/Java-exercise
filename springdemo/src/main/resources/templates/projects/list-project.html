@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body >
+   <h1>Current Projects</h1>
+   <br />
+   <a href="/projects/new"> New projects </a>
+   <hr>
+   <table>
+        <thead>
+            <th>Project Name</th>
+            <th>Project Stage</th>
+            <th>Project Description</th>
+        </thead>
+        <tbody>
+            <tr th:each="field: ${projectList}">
+                <td th:text="${field.name}"></td>
+                <td th:text="${field.stage}"></td>
+                <td th:text="${field.description}"></td>
+            </tr>
+        </tbody>
+   </table>
+    
+</body>
+</html>
